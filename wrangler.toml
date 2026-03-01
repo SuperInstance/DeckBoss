@@ -1,0 +1,28 @@
+name = "deckboss-director"
+main = "packages/director/src/index.ts"
+compatibility_date = "2026-02-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Bindings (user-owned, free-tier first)
+[ai]
+binding = "AI"
+
+[[vectorize]]
+binding = "COGNITIVE_MODEL"
+index_name = "deckboss-cognitive"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "deckboss-db"
+
+[r2_buckets]
+binding = "ARTIFACTS"
+bucket_name = "deckboss-artifacts"
+
+[durable_objects]
+bindings = [{ name = "DIRECTOR", class_name = "Director" }]
+
+# MCP discovery route
+[[routes]]
+pattern = "deckboss.yourdomain.com/mcp"
+custom_domain = true
