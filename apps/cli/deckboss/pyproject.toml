@@ -1,0 +1,8 @@
+# apps/cli/pyproject.toml
+[project]
+name = "deckboss"
+version = "0.1.0"
+dependencies = ["typer", "rich", "httpx", "pydantic"]
+
+[project.scripts]
+deckboss = "deckboss.cli:app"
