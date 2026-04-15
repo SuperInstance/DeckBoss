@@ -1,6 +1,12 @@
 /**
- * DeckBoss Core — Tests
- * Zod schemas + MCP tool definitions
+ * DeckBoss Core — Test Suite
+ * @fileoverview Tests for Zod MissionSchema validation and MCP tool definitions.
+ *
+ * These tests verify the canonical type system that all DeckBoss packages
+ * depend on. The MissionSchema is mirrored to Pydantic in the Python CLI,
+ * so changes here must be reflected in apps/cli/deckboss/models.py.
+ *
+ * Run: cd packages/core && npm test
  */
 
 import { describe, it, expect } from 'vitest';

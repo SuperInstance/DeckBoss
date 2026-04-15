@@ -1,7 +1,16 @@
-# apps/cli/pyproject.toml
+# apps/cli/pyproject.toml — Python package definition for the DeckBoss CLI
+#
+# This package provides the `deckboss` command-line tool that serves as
+# the user-facing interface to the Agent Edge OS. It bridges Claude Code
+# (via MCP) and the Director Durable Object on Cloudflare's edge.
+#
+# Install: pipx install deckboss  (or pip install -e . for development)
+# Entry:  deckboss = deckboss.cli:app
+
 [project]
 name = "deckboss"
 version = "0.1.0"
+description = "Flight deck for AI agents — persistent, edge-native orchestration via MCP"
 dependencies = ["typer", "rich", "httpx", "pydantic"]
 
 [project.scripts]
