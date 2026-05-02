@@ -561,3 +561,5 @@ MIT. Your account. Your agents. Your data.
 ---
 
 <img src="callsign1.jpg" width="128" alt="callsign">
+
+🦐 Cocapn fleet — lighthouse keeper architecture
